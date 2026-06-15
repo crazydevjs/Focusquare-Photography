@@ -1,5 +1,5 @@
 /* ============================================================
-   FocusQuare Photography — script.js
+   Focusquare Photography — script.js
    ============================================================
    👇 EDIT THESE DETAILS — this is the only part you need to change.
    ============================================================ */
@@ -9,7 +9,7 @@ const CONFIG = {
   whatsappNumber: "919044647871",
 
   // Default WhatsApp greeting message
-  whatsappMessage: "Hi FocusQuare Photography! I'd like to know more about your wedding photography.",
+  whatsappMessage: "Hi Focusquare Photography! I'd like to know more about your wedding photography.",
 
   // Instagram username (without the @)
   instagramHandle: "focusquare_photography",
@@ -129,7 +129,7 @@ const CONFIG = {
       }
 
       const text =
-        "New Enquiry — FocusQuare Photography%0A" +
+        "New Enquiry — Focusquare Photography%0A" +
         "----------------------%0A" +
         "Name: " + name + "%0A" +
         "Phone: " + phone + "%0A" +

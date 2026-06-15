@@ -1,6 +1,6 @@
-# FocusQuare Photography — Website
+# Focusquare Photography — Website
 
-A responsive, professional one-page website for **FocusQuare Photography**
+A responsive, professional one-page website for **Focusquare Photography**
 — *The Ultimate Wedding Stories*.
 
 ## How to view it
@@ -26,7 +26,7 @@ const CONFIG = {
 - The contact form also sends enquiries straight to WhatsApp.
 
 ### 2. Logo
-Replace **`assets/logo.png`** with the real FocusQuare logo (keep the same name).
+Replace **`assets/logo.png`** with the real Focusquare logo (keep the same name).
 > Note: the current logo is the PNG that was provided — it currently shows
 > "Gyanpur Junction Cafe + Restaurant". Swap it for the actual photography logo.
 
