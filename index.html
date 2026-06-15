@@ -153,14 +153,43 @@
         <p class="section-lead">A glimpse into the moments we've had the honour to capture.</p>
       </div>
 
+      <!-- Category menu (like a menu: pick a category) -->
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="wedding">Wedding</button>
+        <button class="filter-btn" data-filter="prewedding">Pre-Wedding</button>
+        <button class="filter-btn" data-filter="engagement">Engagement</button>
+      </div>
+
       <div class="gallery">
-        <!-- Drop your images into assets/gallery/ as 1.jpg ... 6.jpg -->
-        <figure class="gallery-item reveal"><img src="assets/gallery/1.jpg" alt="Wedding moment" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
-        <figure class="gallery-item reveal tall"><img src="assets/gallery/2.jpg" alt="Pre-wedding shoot" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
-        <figure class="gallery-item reveal"><img src="assets/gallery/3.jpg" alt="Candid moment" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
-        <figure class="gallery-item reveal"><img src="assets/gallery/4.jpg" alt="Couple portrait" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
-        <figure class="gallery-item reveal tall"><img src="assets/gallery/5.jpg" alt="Ceremony" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
-        <figure class="gallery-item reveal"><img src="assets/gallery/6.jpg" alt="Celebration" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+        <!--
+          HOW TO ADD PHOTOS:
+          Drop images into the matching folder, named 1.jpg, 2.jpg, ...
+            • Wedding      -> assets/gallery/wedding/
+            • Pre-Wedding  -> assets/gallery/prewedding/
+            • Engagement   -> assets/gallery/engagement/
+          To show more photos, just copy a <figure> line and bump the number.
+        -->
+
+        <!-- ===== WEDDING ===== -->
+        <figure class="gallery-item reveal" data-cat="wedding"><img src="assets/gallery/wedding/1.jpg" alt="Wedding moment" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+        <figure class="gallery-item reveal tall" data-cat="wedding"><img src="assets/gallery/wedding/2.jpg" alt="Wedding moment" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+        <figure class="gallery-item reveal" data-cat="wedding"><img src="assets/gallery/wedding/3.jpg" alt="Wedding moment" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+        <figure class="gallery-item reveal" data-cat="wedding"><img src="assets/gallery/wedding/4.jpg" alt="Wedding moment" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+        <figure class="gallery-item reveal tall" data-cat="wedding"><img src="assets/gallery/wedding/5.jpg" alt="Wedding moment" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+        <figure class="gallery-item reveal" data-cat="wedding"><img src="assets/gallery/wedding/6.jpg" alt="Wedding moment" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+
+        <!-- ===== PRE-WEDDING ===== -->
+        <figure class="gallery-item reveal" data-cat="prewedding"><img src="assets/gallery/prewedding/1.jpg" alt="Pre-wedding shoot" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+        <figure class="gallery-item reveal tall" data-cat="prewedding"><img src="assets/gallery/prewedding/2.jpg" alt="Pre-wedding shoot" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+        <figure class="gallery-item reveal" data-cat="prewedding"><img src="assets/gallery/prewedding/3.jpg" alt="Pre-wedding shoot" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+        <figure class="gallery-item reveal" data-cat="prewedding"><img src="assets/gallery/prewedding/4.jpg" alt="Pre-wedding shoot" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+
+        <!-- ===== ENGAGEMENT ===== -->
+        <figure class="gallery-item reveal" data-cat="engagement"><img src="assets/gallery/engagement/1.jpg" alt="Engagement moment" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+        <figure class="gallery-item reveal tall" data-cat="engagement"><img src="assets/gallery/engagement/2.jpg" alt="Engagement moment" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+        <figure class="gallery-item reveal" data-cat="engagement"><img src="assets/gallery/engagement/3.jpg" alt="Engagement moment" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
+        <figure class="gallery-item reveal" data-cat="engagement"><img src="assets/gallery/engagement/4.jpg" alt="Engagement moment" onerror="this.closest('.gallery-item').classList.add('img-placeholder');this.remove()" /></figure>
       </div>
     </div>
   </section>

@@ -140,6 +140,21 @@ const CONFIG = {
     });
   }
 
+  /* ---- Portfolio category filter ---- */
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const galleryItems = document.querySelectorAll(".gallery-item");
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      const filter = btn.getAttribute("data-filter");
+      filterBtns.forEach(function (b) { b.classList.remove("active"); });
+      btn.classList.add("active");
+      galleryItems.forEach(function (item) {
+        const show = filter === "all" || item.getAttribute("data-cat") === filter;
+        item.classList.toggle("hidden", !show);
+      });
+    });
+  });
+
   /* ---- Footer year ---- */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
